@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Expertise | Nik Amar Soffian</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+
+/* PAGE HEADER */
+.page-header {
+    background: #a67c3c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+}
+
+/* SERVICES NAV */
+.services-nav {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.services-nav button {
+    background: none;
+    border: none;
+    margin: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1e3a5f;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.services-nav button.active,
+.services-nav button:hover {
+    color: #a67c3c;
+    border-bottom: 2px solid #a67c3c;
+}
+
+/* CONTENT BOX */
+.service-content {
+    display: none;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #f5f5f5;
+    padding: 40px;
+    border-radius: 6px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.service-content.active {
+    display: block;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.contact-box h4 {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="topnav">
+    <div class="nav-container">
+        <div class="logo">Nik Amar Soffian</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="lawyer.html">Lawyers</a>
+            <a href="expertise.html">Expertise</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<div class="page-header">
+    <h1>Our Services</h1>
+</div>
+
+<!-- SERVICE TABS -->
+<div class="services-nav">
+    <button onclick="openService('civil')" class="active">Civil Litigation</button>
+    <button onclick="openService('corporate')">Corporate & Commercial</button>
+    <button onclick="openService('criminal')">Criminal Law</button>
+    <button onclick="openService('property')">Property & Real Estate</button>
+    <button onclick="openService('family')">Family Law</button>
+</div>
+
+<!-- SERVICE CONTENTS -->
+
+<div id="civil" class="service-content active">
+    <h3>Civil Litigation</h3>
+    <p>
+        We represent clients in contractual disputes, debt recovery matters,
+        tort claims and general civil proceedings. Our approach focuses on
+        strategic resolution, whether through negotiation, mediation or court representation.
+    </p>
+
+    <div class="contact-box">
+        <h4>Contact</h4>
+        <p><strong>Nik Amar Soffian</strong><br>
+        Principal Lawyer<br>
+        Email: soffianazmir98@gmail.com<br>
+        Tel: +60 13-844 3798</p>
+    </div>
+</div>
+
+<div id="corporate" class="service-content">
+    <h3>Corporate & Commercial Law</h3>
+    <p>
+        Advisory services on company incorporation, shareholder agreements,
+        commercial contracts and regulatory compliance. We assist businesses
+        in structuring transactions and mitigating legal risks.
+    </p>
+
+    <div class="contact-box">
+        <h4>Contact</h4>
+        <p><strong>Nik Amar Soffian</strong><br>
+        Principal Lawyer<br>
+        Email: soffianazmir98@gmail.com<br>
+        Tel: +60 13-844 3798</p>
+    </div>
+</div>
+
+<div id="criminal" class="service-content">
+    <h3>Criminal Law</h3>
+    <p>
+        Providing defence representation and advisory services in criminal investigations
+        and proceedings. We ensure clients receive fair representation and strategic advice.
+    </p>
+
+    <div class="contact-box">
+        <h4>Contact</h4>
+        <p><strong>Nik Amar Soffian</strong><br>
+        Principal Lawyer<br>
+        Email: soffianazmir98@gmail.com<br>
+        Tel: +60 13-844 3798</p>
+    </div>
+</div>
+
+<div id="property" class="service-content">
+    <h3>Property & Real Estate</h3>
+    <p>
+        Handling sale and purchase agreements, tenancy matters,
+        property transfers and land disputes with precision and compliance.
+    </p>
+
+    <div class="contact-box">
+        <h4>Contact</h4>
+        <p><strong>Nik Amar Soffian</strong><br>
+        Principal Lawyer<br>
+        Email: soffianazmir98@gmail.com<br>
+        Tel: +60 13-844 3798</p>
+    </div>
+</div>
+
+<div id="family" class="service-content">
+    <h3>Family Law</h3>
+    <p>
+        Advising clients on divorce proceedings, custody arrangements,
+        maintenance claims and matrimonial disputes with discretion and care.
+    </p>
+
+    <div class="contact-box">
+        <h4>Contact</h4>
+        <p><strong>Nik Amar Soffian</strong><br>
+        Principal Lawyer<br>
+        Email: soffianazmir98@gmail.com<br>
+        Tel: +60 13-844 3798</p>
+    </div>
+</div>
+
+<script>
+function openService(serviceId) {
+    var contents = document.querySelectorAll('.service-content');
+    var buttons = document.querySelectorAll('.services-nav button');
+
+    contents.forEach(function(content) {
+        content.classList.remove('active');
+    });
+
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(serviceId).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
