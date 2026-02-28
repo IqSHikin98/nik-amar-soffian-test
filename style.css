@@ -47,7 +47,7 @@ nav a:hover {
 /* HERO */
 .hero {
     background: url('images/background.jpg') center/cover no-repeat;
-    height: 100vh;
+    height: 550px;   /* reduced from full screen */
     margin-top: 90px;
     position: relative;
 }
@@ -156,3 +156,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
