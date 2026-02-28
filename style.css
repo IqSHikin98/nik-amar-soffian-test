@@ -367,3 +367,34 @@ footer {
 .lawyer-card a:hover {
     text-decoration: underline;
 }
+
+/* PROFILE PAGE */
+
+.profile-section {
+    padding: 120px 10% 80px 10%;
+    background: #ffffff;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.profile-left img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+.profile-left h2 {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.profile-right p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #444;
+}
