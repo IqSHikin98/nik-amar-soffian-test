@@ -530,3 +530,44 @@ footer {
     }
 }
 
+.home-contact {
+    background: url("images/contact-bg.jpg") center/cover no-repeat;
+    padding: 120px 0;
+    position: relative;
+}
+
+.home-contact-overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 60px 0;
+}
+
+.home-contact-box {
+    background: rgba(255,255,255,0.95);
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.home-contact-box h2 {
+    color: #1c3d63;
+    margin-bottom: 15px;
+}
+
+.home-contact-box input,
+.home-contact-box select,
+.home-contact-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.home-contact-box button {
+    background: #b38b4d;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    cursor: pointer;
+}
