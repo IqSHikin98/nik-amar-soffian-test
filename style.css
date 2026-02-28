@@ -6,41 +6,39 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
 /* HEADER */
 .main-header {
-    background: #ffffff;
-    padding: 20px 0;
+    background: white;
     border-bottom: 4px solid #c7a14a;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-.header-container {
-    width: 90%;
+.header-inner {
     max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    padding: 15px 20px;
 }
 
-.logo-img {
+.logo {
     height: 70px;
+    width: auto;
 }
 
-.header-text h1 {
-    font-size: 24px;
+.firm-name {
+    margin-left: 20px;
+}
+
+.firm-name h1 {
+    font-size: 22px;
     color: #0f2a47;
-    letter-spacing: 1px;
 }
 
-.header-text p {
+.firm-name span {
     color: #c7a14a;
     font-size: 14px;
 }
@@ -49,12 +47,11 @@ body {
 .main-nav {
     background: #1c3d63;
     position: sticky;
-    top: 110px;
-    z-index: 999;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-container {
-    width: 90%;
+.nav-inner {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -63,11 +60,9 @@ body {
 }
 
 .main-nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     padding: 15px 0;
-    font-size: 15px;
-    transition: 0.3s;
 }
 
 .main-nav a:hover {
@@ -79,52 +74,45 @@ body {
     background: #0f2a47;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 600px;
+.hero-content {
+    max-width: 700px;
     margin: auto;
-    margin-bottom: 30px;
 }
 
-.btn-gold {
+.btn {
+    display: inline-block;
     background: #c7a14a;
     color: white;
-    padding: 12px 25px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
+    margin-top: 20px;
 }
 
-.btn-gold:hover {
+.btn:hover {
     background: #e5c67c;
     color: #0f2a47;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
-    padding: 80px 20px;
+    padding: 60px 20px;
+}
+
+.light {
+    background: #f5f5f5;
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
 
 .section h2 {
-    color: #0f2a47;
     margin-bottom: 20px;
-}
-
-.contact-section {
-    background: #f5f5f5;
+    color: #0f2a47;
 }
 
 /* FOOTER */
@@ -132,5 +120,5 @@ footer {
     background: #0f2a47;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
