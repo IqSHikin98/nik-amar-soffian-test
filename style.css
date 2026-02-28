@@ -398,3 +398,86 @@ footer {
     line-height: 1.8;
     color: #444;
 }
+
+/* PROFILE LEFT TEXT */
+
+.profile-left .position {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* PROFILE INFO SECTION */
+
+.profile-info {
+    margin-top: 30px;
+}
+
+.profile-info h4 {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #b38b4d; /* gold accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile-info ul {
+    padding-left: 18px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.profile-info li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* PROFILE RIGHT */
+
+.profile-right {
+    padding-top: 10px;
+}
+
+/* OPTIONAL GOLD LINE UNDER NAME */
+
+.profile-left h2 {
+    position: relative;
+}
+
+.profile-left h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #b38b4d;
+    margin-top: 8px;
+}
+
+/* RESPONSIVE (VERY IMPORTANT) */
+
+@media (max-width: 900px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-left img {
+        max-width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+    .profile-left,
+    .profile-right {
+        text-align: center;
+    }
+
+    .profile-info ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
