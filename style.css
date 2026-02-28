@@ -256,3 +256,49 @@ footer {
     background: #e5c67c;
     color: #0f2a47;
 }
+
+/* ABOUT PAGE HERO */
+.about-hero {
+    background: url('images/background.jpg') center/cover no-repeat;
+    height: 350px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.about-overlay {
+    background: rgba(15, 42, 71, 0.85);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero-text {
+    text-align: center;
+    color: white;
+}
+
+.about-hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ABOUT PAGE CONTENT */
+.about-page {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+}
+
+.about-page-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #1c3d63;
+}
+
+.about-page-right p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #444;
+}
