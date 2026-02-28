@@ -157,3 +157,36 @@ footer {
     padding: 20px;
 }
 
+/* ABOUT GRID */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    color: #1c3d63;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.gold-sub {
+    color: #c7a14a;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 4px;
+}
